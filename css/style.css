@@ -9,6 +9,82 @@ header {
     padding: 200px 0;
 }
 header, footer {
+    background: var(--color1);
+    background: url("../img/pattern.png"), -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
+    background: url("../img/pattern.png"), -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
+    background: url("../img/pattern.png"), linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
+    filter: url("../img/pattern.png"), progid:DXImageTransform.Microsoft.gradient( startColorstr='#05b1b1', endColorstr='#52339a',GradientType=1 );
+    background-size: contain;
+}
+.play_btn {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.play_btn:hover {
+    background-color: var(--color2);
+    transition: all 0.5s ease;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent white;
+    margin-left: 5px;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.order_btn {
+    color: white;
+    background-color: var(--color2);
+    transition: all 0.5s ease;
+    padding: 10px 40px;
+    margin: 20px 0;
+}
+.order_btn:hover {
+    background-color: var(--color1);
+    color: white;
+}
+
+
+
+
+
+
+
+/* :root {
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+header, footer, section {
+    padding: 100px 0;
+}
+header {
+    padding: 200px 0;
+}
+header, footer {
     background: url(../img/pattern.png), (--color1);
     background: url(../img/pattern.png), -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
     background: url(../img/pattern.png), -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
@@ -66,4 +142,16 @@ header, footer {
     left: 0;
     width: 100%;
     height: 100%;
+  } */
+
+
+
+  div {
+      color: white !important;
+  }
+  div p {
+      color: blue;
+  }
+  p {
+      color: black  ;
   }
