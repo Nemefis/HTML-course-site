@@ -2,6 +2,7 @@
     --color1: #05b1b1;
     --color2: #52339a;
 }
+
 header, footer, section {
     padding: 100px 0;
 }
@@ -67,9 +68,37 @@ header, footer {
     background-color: var(--color1);
     color: white;
 }
+
 .color1 {
     color: var(--color1);
 }
 .color2 {
-    color:  var(--color2);
+    color: var(--color2);
+}
+/* О курсе */
+.about {
+    background-color: #eeeeee;
+}
+.icon_wrap {
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--color2);
+    margin: 0 auto;
+}
+.line {
+    width: 25%;
+    height: 3px;
+    background: var(--color1);
+    margin: 0 auto;
+}
+/* Курс для тех кто */
+.forwho h5 {
+    border: 3px solid var(--color1);
+    padding: 40px 0;
 }
