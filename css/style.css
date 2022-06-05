@@ -2,7 +2,10 @@
     --color1: #05b1b1;
     --color2: #52339a;
 }
-
+#red {
+    color: black;
+    background-color: red;
+}
 header, footer, section {
     padding: 100px 0;
 }
@@ -76,8 +79,8 @@ header, footer {
     color: var(--color2);
 }
 /* О курсе */
-.about {
-    background-color: #eeeeee;
+.about, .course_program {
+    background-color: #eee;
 }
 .icon_wrap {
     width: 70px;
@@ -101,4 +104,12 @@ header, footer {
 .forwho h5 {
     border: 3px solid var(--color1);
     padding: 40px 0;
+}
+/* Программа курса */
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--color2);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
