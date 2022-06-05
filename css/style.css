@@ -2,10 +2,6 @@
     --color1: #05b1b1;
     --color2: #52339a;
 }
-#red {
-    color: black;
-    background-color: red;
-}
 header, footer, section {
     padding: 100px 0;
 }
